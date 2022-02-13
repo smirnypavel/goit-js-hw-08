@@ -4,7 +4,7 @@ import SimpleLightbox from "simplelightbox";
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
-console.log(galleryItems);
+// console.log(galleryItems);
 const galleryRef = document.querySelector('.gallery');
 
 const markAp = galleryItems.map(({ preview, original, description }) => `<li class="gallery__link">
@@ -17,10 +17,10 @@ const markAp = galleryItems.map(({ preview, original, description }) => `<li cla
     />
 </a>
 </li>`).join('');
-console.log(markAp);
+// console.log(markAp);
 
 galleryRef.insertAdjacentHTML('beforeend', markAp);
-galleryRef.addEventListener
+// galleryRef.addEventListener
 
 let lightbox = new SimpleLightbox('.gallery a', {
     captionsData: `alt`,
